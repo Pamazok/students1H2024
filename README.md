@@ -54,9 +54,37 @@ For example for user `KC03D1E`: 12000 + 100 + 14 = 12114
 
 For example for user `KC03D24`: 12000 + 200 + 04 = 12204
 
+| User ID | Port  |
+| :---:   | :---: |
+| KC03D12 | 12102 |
+| KC03D13 | 12103 |
+| KC03D14 | 12104 |
+| KC03D15 | 12105 |
+| KC03D16 | 12106 |
+| KC03D17 | 12107 |
+| KC03D18 | 12108 |
+| KC03D19 | 12109 |
+| KC03D1A | 12110 |
+| KC03D1B | 12111 |
+| KC03D1C | 12112 |
+| KC03D1D | 12113 |
+| KC03D1E | 12114 |
+| KC03D1F | 12115 |
+| KC03D21 | 12201 |
+| KC03D22 | 12202 |
+| KC03D23 | 12203 |
+| KC03D24 | 12204 |
+| KC03D25 | 12205 |
+| KC03D26 | 12206 |
+| KC03D27 | 12207 |
+| KC03D2C | 12212 |
+| KC03D3B | 12311 |
+| KC03D3C | 12312 |
+
 # Visualization part
 
-Grafana: TBD
+Grafana: https://grafana.sbait.eu/
+User's will be created later
 
 ## Prometheus format
 
