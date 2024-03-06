@@ -3,4 +3,4 @@
 
 #define HTTP_PORT 12114
 
-#endif  __MY_CONFIG__
+#endif

@@ -108,3 +108,22 @@ job_cpu_total_ms{user="KC03D00",jobname="WLM"} 110.005
 job_cpu_total_ms{user="KC03D00",jobname="D00HTTP"} 0.002
 ```
 
+
+HTTP handler sample:
+```
+  respondWithChunkedOutputStream(response);
+
+  setResponseStatus(response, HTTP_STATUS_OK, "OK");
+  setContentType(response, "text/plain");
+  addStringHeader(response, "Server", "jdmfws");
+  addStringHeader(response, "Transfer-Encoding", "chunked");
+  writeHeader(response);
+
+  char bigBuffer[2048];
+
+  memset(bigBuffer, 0x00, sizeof(bigBuffer));
+  sprintf(bigBuffer, "%s %s %d", "my", "test text", 1);
+
+  finishResponse(response);
+```
+
