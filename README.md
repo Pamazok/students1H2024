@@ -92,3 +92,19 @@ By default it will go to the `/metrics` endpoint
 
 Read more here: https://prometheus.io/docs/concepts/data_model/
 
+General Example:
+```
+# HELP _parameter_ _Description_
+# TYPE _parameter_ gauge|count
+_parameter_{_label1_="name11",_label2_="name12",...,_labelN_="name1N"} _value1_
+_parameter_{_label1_="name21",_label2_="name22",...,_labe2N_="name2N"} _value2_
+```
+
+Our case (what your application have to use):
+```
+job_cpu_total_ms{user="KC03Dxx",jobname="DxxHTTP"} ss.mmm
+for example:
+job_cpu_total_ms{user="KC03D00",jobname="WLM"} 110.005
+job_cpu_total_ms{user="KC03D00",jobname="D00HTTP"} 0.002
+```
+
