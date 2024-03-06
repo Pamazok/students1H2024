@@ -123,6 +123,7 @@ HTTP handler sample:
 
   memset(bigBuffer, 0x00, sizeof(bigBuffer));
   sprintf(bigBuffer, "%s %s %d", "my", "test text", 1);
+  writeString(response->stream, bigBuffer);
 
   finishResponse(response);
 ```
